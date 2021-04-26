@@ -12,10 +12,8 @@
 	<keywords>sms,retriever</keywords>
 
 	<engines>
-		<engine name="cordova" version=">=6.0.0" />
+		<engine name="cordova" version=">=9.0.0" />
 	</engines>
-
-	<dependency id="cordova-support-google-services" />
 
 	<js-module src="www/SMSRetriever.js" name="SMSRetriever">
 		<clobbers target="window.SMSRetriever" />
@@ -32,6 +30,7 @@
 			<feature name="SMSRetriever">
 			<param name="android-package" value="com.andreszs.smsretriever.SMSRetriever"/>
 			</feature>
+      <preference name="GradlePluginGoogleServicesEnabled" value="true" />
 		</config-file>
 
 		<config-file target="AndroidManifest.xml" parent="/*">
